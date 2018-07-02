@@ -1,0 +1,48 @@
+@charset "utf-8"; 
+//图片的宽度
+// @img-width:0.7rem * @hd; 
+:global{
+  .amContainer{
+    padding: 0.1rem * @hd;
+    .list-view-section-body .listOuter:last-child .am-whitespace-sm{
+        display: none
+    }
+    .am-pull-to-refresh-content-wrapper{
+      padding-bottom: 100px;
+    }
+    .am-list-footer{
+      padding: 0
+    }
+    .am-pull-to-refresh-content{
+      min-height: 5rem * @hd;
+    }
+  }
+  
+  .hosList {
+    .am-list-extra{
+      flex: 1 !important; 
+      flex-basis: 1 !important;
+      margin-left:0.075rem * @hd  !important;
+      img{
+        height: auto;
+      }
+    }
+    
+    .am-list-content{
+      flex: 3 !important;
+      font-size: 0.159rem * @hd !important;
+    }
+    .am-list-brief{
+      white-space: pre-line !important;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      font-size: 0.14rem * @hd !important;
+    }
+   }
+}
+.hosImg{
+  img{
+    width: 100%;
+  }
+}

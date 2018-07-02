@@ -1,0 +1,176 @@
+
+.normal {
+}
+.orderDetail p{
+  -webkit-margin-before: 0.1rem;
+  -webkit-margin-after: 0.1rem;
+}
+.support{
+  height: 130px;
+}
+.imgContainer{
+  flex: 1;
+  margin-left: 0.15rem * @hd;
+}
+.textContainer{
+  flex: 4;
+  margin-left: 0.15rem * @hd;
+  p{
+    margin: 0.1rem * @hd auto;
+    color: #999;
+    &.time{
+      position: absolute;
+      right: 0.15rem * @hd;
+      top: 0.05rem * @hd;
+      color: #444;
+    }
+  }
+  h3{
+    margin: 0.1rem * @hd auto;
+  }
+}
+.info-img{
+  height: 1.1rem * @hd; 
+  position: relative;
+  margin-right: 5px;
+  top: 2px;
+}
+h3{
+  font-weight: 400;
+  color: #444
+}
+.price{
+  color: #108ee9;
+}
+
+.footer{
+  border-top: solid 1px #ddd !important;
+  min-height: 0.45rem * @hd !important;
+}
+.viewWorkers{
+  color: #108ee9;
+  font-size: 0.14rem * @hd;
+}
+
+.status{
+  color: #333333;
+  //font-weight: bold;
+}
+.time{
+  font-size: 0.28rem;
+  color: #999;
+}
+.desp{
+  color: #999999;
+}
+:global{
+  .blueDetailStatus{
+    color: #03a9f5;
+    font-size: 0.26rem;
+  }
+  .grayDetailStatus{
+    color: #999999;
+    font-size: 0.26rem;
+  }
+  .redDetailStatus{
+    color: red;
+    font-size: 0.26rem;
+  }
+  .contactBtn{
+    background-color: #FFA911 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    z-index: 999;
+  }
+  .contactBtn .am-icon{
+    margin-right: 0 !important;
+    margin-left: 0.5em; 
+  }
+  .orderDetailTitle{
+    padding: 0.1rem 0.3rem;
+    .am-card-body::before{
+        height: 0 !important
+    }
+  }
+  .orderDetailTitle .am-flexbox .am-flexbox-item:first-child{
+    flex: none;
+    font-size: 0.3rem;
+    width: 70%;
+  }
+  .orderDetailTitle 
+  .am-card.am-card-full{
+    margin-top: 0;
+  }
+  .feeInfo .am-card-body .am-list-body .am-list-item.am-list-item-middle .am-list-line .am-list-extra{
+    color: #00A9F6 !important;
+  }
+  .feeInfo .am-card-body .am-list-body .redCharge.am-list-item-middle .am-list-line .am-list-extra{
+    color: red !important;
+  }
+  .am-card{
+    border-radius: 0 !important;
+    margin-top: 0.1rem * @hd;
+    min-height: 0;
+    &::before{
+      height: 0 !important;
+    }
+    .am-card-header-content img{
+      position: relative;
+      top: 0.03rem * @hd;
+      width: 0.15rem * @hd;
+    }
+
+    .am-card-body{
+      padding: 0.1rem 0;
+      .am-list-body{
+        &::before, &::after{
+          height: 0;
+        }
+        border: 0;
+        .am-list-item.am-list-item-middle{
+          &::after{
+            height: 0;
+          }
+          min-height: 0.35rem * @hd;
+          border: 0;
+          .am-list-line{
+            &::after{
+              height: 0;
+            }
+            border: 0;
+            .am-list-content{
+              color: #999;
+              font-size: 0.14rem * @hd;
+              padding-top: 0.05rem * @hd;
+              padding-bottom: 0.05rem * @hd;
+            }
+            .am-list-extra{
+              color: inherit;
+              font-size: 0.14rem * @hd;
+              padding-top: 0.05rem * @hd;
+              padding-bottom: 0.05rem * @hd;
+            }
+          }
+        }
+      }
+    }
+  }
+  .am-list-content{
+    flex: 1;
+  }
+  .am-list-item .am-list-line .am-list-extra{
+    flex: 2;
+    white-space: normal;
+  }
+  .am-list-item .am-list-line .am-list-content{
+    overflow: visible;
+  }
+  .orderDetail .am-button > .am-button-icon{
+    margin-right: 0;
+    position: absolute;
+    right: 1.9rem;
+  }
+}

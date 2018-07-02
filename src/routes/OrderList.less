@@ -1,0 +1,84 @@
+
+.orderId{
+  color: #666;
+}
+.item{
+  background: white;
+  margin: 0.08rem*@hd 0;
+  padding: 0;
+}
+.item:first-child{
+  background: white;
+  //margin: 0 0 0.08rem*@hd 0;
+  padding: 0;
+  z-index: 999;
+}
+.imgContainer{
+  flex: 0.5;
+  img{
+    width: 80%;
+  }
+}
+.textContainer{
+  flex: 2;
+  padding-left: 0.1rem * @hd;
+  p {
+    margin-top: 0.05rem * @hd;
+    margin-bottom: 0.1rem * @hd;
+    color: #666;
+  }
+  h4{
+    font-weight: 400;
+    margin-top: 0.05rem * @hd;
+    margin-bottom: 0.15rem * @hd;
+  }
+}
+.right{
+  float: right;
+  color: rgb(3, 169, 245);
+}
+.noPay{
+  color: rgb(3, 169, 245);
+}
+.row1, .row2, .row3{
+  padding: 0.1rem * @hd;
+}
+.row1{
+  line-height: 0.25rem * @hd;
+}
+.row2{
+  background: rgb(249, 249, 249);
+}
+.row3{
+  text-align: right;
+  line-height: 0.25rem * @hd;
+  span{
+    // display: inline-block;
+    // width: 1.3rem * @hd;
+    margin-left: 0.2rem * @hd;
+  }
+}
+:global{
+    .amList{
+      height: 100%;
+      .am-pull-to-refresh-content-wrapper{
+        min-height: 100%;
+        .am-pull-to-refresh-content{
+          min-height: 100%;
+        }
+      }
+    }
+  .am-list-body{
+    background: transparent;
+  }
+  .blueStatus{
+    color: #03a9f5;
+  }
+  .grayStatus{
+    color: #999999;
+  }
+  .redStatus{
+    color: red;
+  }
+}
+

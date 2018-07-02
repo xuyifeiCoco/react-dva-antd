@@ -1,0 +1,35 @@
+
+.normal {
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #909;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:    #909;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:    #909;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:    #909;
+}
+.submitBtn{
+  background-color: #00A7F8;
+}
+:global {
+  .createOrder .am-list-header, .createOrderRemark .am-list-header{
+    text-align: left;
+    line-height: 0.4rem * @hd;
+  }
+  .createOrder .am-list-item .am-input-control input{
+    text-align: right;
+  }
+  .createOrder span{
+    color: #FF0000;
+    display: inline-block;
+    padding: 0 0.025rem * @hd;
+  }
+  .am-list-item .am-input-control input[placeholder]{
+    color: #000
+  }
+}
